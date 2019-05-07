@@ -1,0 +1,113 @@
+@model IEnumerable<GroupProject3.Models.Resident>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AcctOwner)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnitNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StorageNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContactNum1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContactNum2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContactNum3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParkingSpot1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParkingSpot2)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AcctOwner)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StorageNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContactNum1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContactNum2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContactNum3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ParkingSpot1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ParkingSpot2)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
