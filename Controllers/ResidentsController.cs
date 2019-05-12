@@ -21,7 +21,8 @@ namespace GroupProject3.Controllers
         // GET: Residents
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Residents.ToListAsync());
+            //return View(await _context.Residents.ToListAsync());
+		  return Json(await _context.Residents.ToListAsync());
         }
 
         // GET: Residents/Details/5
