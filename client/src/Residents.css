@@ -1,0 +1,92 @@
+#ErrorMsg
+{
+	position:					fixed;
+	color:					#FF0;
+	background-color:			#800;
+	top:						190px;
+}
+
+#NavBar
+{
+	color:					#FF0;
+	background-color:			#888;
+	top:						190px;
+	bottom:					30px;
+	width:					200px;
+	position:					fixed;
+	border:					1px solid #000;
+	cursor:					default;
+}
+
+#NavBar a
+{
+	display:					block;
+	margin:					2px;
+	padding:					2px;
+}
+
+#NavBar a.ResLink:hover
+{
+	background:				#FF0;
+	color:					#000;
+	cursor:					pointer;
+	margin:					2px;
+	padding:					2px;
+}
+
+#ResDet
+{
+	position:					fixed;
+	top:						190px;
+	bottom:					30px;
+	left:					0px;
+	width:					100%;
+	color:					#000;
+	background-color:			#888;
+	text-align:				Left;
+	margin-left:				202px;
+	padding:					2px;
+	border:					1px solid #000;
+	cursor:					default;
+}
+
+#ResDet b.line
+{
+	display:					inline-block;
+	width:					200px;
+	text-align:				right;
+	margin:					2px;
+	padding:					2px;
+	height:					20px;
+}
+
+#ResDet u.info
+{
+	display:					inline-block;
+	margin-left:				10px;
+	width: 					390px !important;
+	margin:					2px;
+	padding:					2px;
+	height:					20px;
+}
+
+#ResDet u.info:hover
+{
+	background-color:			#FFF;
+}
+
+#options
+{
+	position:					fixed;
+	bottom:					40px;
+	left:					210px;
+}
+
+#options button.option_button
+{
+	width:					100px;
+}
+#options button.option_button:hover
+{
+	background-color:			aqua;
+}

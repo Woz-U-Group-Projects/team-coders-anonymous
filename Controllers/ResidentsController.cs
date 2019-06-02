@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GroupProject3.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace GroupProject3.Controllers
 {
@@ -19,6 +20,7 @@ namespace GroupProject3.Controllers
         }
 
         // GET: Residents
+	   [EnableCors("AllowOrigin")]
         public async Task<IActionResult> Index()
         {
             //return View(await _context.Residents.ToListAsync());
